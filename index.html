@@ -6,43 +6,79 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Barbados surfing school</title>
     <link rel='stylesheet' type="text/css" href="style.css"/>
+    <link rel='stylesheet' type="text/css" href="grid.css"/>
   </head>
   <body>
-      <header>
-      <nav>
-        <ul class="nav-menu">
-          <li class ='li'>Home</li>
-          <li class ='li'>About</li'>
-          <li class ='li'>Packages</li>
-          <li class="li">Gallery</li>
-          <li class="li">Contact</li>
-        </ul>
-      </nav>
-      </header>
-      <main>
-        <section class="top-sec"> 
-          <h1 class="title">Welcome to Barbados Surfing school</h1>
-            <aside class="sidebar">
-              <article class ="intro">
-                <p class=opener-pra>We are a professional surfing School here to help you to make your dream come true.<br>
-                   We welcome people from all ages and diffrent skils level backgrounds.We are a professional surfing School here to help you to make your dream come true.<br>
-                   We welcome people from all ages and diffrent skils level backgroundsWe are a professional surfing School here to help you to make your dream come true.<br>
-                   We welcome people from all ages and diffrent skils level backgroundsWe are a professional surfing School here to help you to make your dream come true.<br>
-                   We welcome people from all ages and diffrent skils level backgroundsWe are a professional surfing School here to help you to make your dream come true.<br>
-  
-      
-                </p>
-              </article>
-            </aside>
+    <header>
+        <nav>
+          <ul class="xl-col-12 nav-menu">
+            <li class ='li xl-col-1'><a href="index.html">Home</a></li>
+            <li class ='li xl-col-1'><a href="#about">About</a></li'>
+              <li class ='li xl-col-1'><a href="#packages">Packages</a></li>
+              <li class='li xl-col-1'><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <section>
+            <h1 class="centered">Welcome to Barbados surfing school</h1>
             <figure>
-              <img src="img/mainsurf.jpg"/>
-               
+              <img class='xl-col-12'src ='img/surfing.jpg'>
             </figure>
+                <figcaption>
+                <a class="button" href="register.html">Register</a>
+               </figcaption>
+              </section>
+          <section class="container xl-col-12">
+            <h2 id ="about"class="title">About</h2>
+            <article>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum et libero totam necessitatibus distinctio rem deleniti vero ipsam ducimus. Ea, molestiae cumque. Perferendis sequi corporis quasi. Vitae consequuntur nemo doloribus itaque? Vitae quis excepturi, quae maiores ea rem beatae cum? Atque, rerum omnis odio unde corporis quasi vel doloribus tenetur consequuntur excepturi aperiam ullam animi fugit corrupti recusandae molestiae fugiat itaque blanditiis eligendi. Doloribus praesentium consectetur numquam enim mollitia quasi a voluptate porro cum. Velit quibusdam nemo placeat delectus molestias tempore quo aliquam pariatur omnis, consequatur dolores? Nulla aliquid quam expedita? Optio illo velit fugiat, fugit iure nihil? Ab, quas!</p>
+              <h2 id ="packages"class="title">Packages</h2>
+            </article>
           </section>
-          <section></section>
-          <section></section>
-      </main>
-      <footer>
-     </footer>
-  </body>
-</html>
+          <section class="row"> 
+             <article class="xl-col-4 container"> 
+              <h3 class="title">Family package</h3>
+              <img class="xl-col-12"src="img/family.jpg"/>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quo ipsa quas obcaecati qui vel illum, dolore reprehenderit beatae culpa doloremque dolor? Perferendis rerum corrupti doloribus minus esse. Ut, dolore!</p>
+            </article>
+              <article class="xl-col-4 container"> 
+              <h3 class="title">OneToOnePackage</h3>
+            <img class="xl-col-12"src="img/private.jpg"/>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quo ipsa quas obcaecati qui vel illum, dolore reprehenderit beatae culpa doloremque dolor? Perferendis rerum corrupti doloribus minus esse. Ut, dolore!</p>
+            </article>
+            <article class="xl-col-4 container"> 
+             <h3 class="title">Advanced Package</h3>
+              <img class="xl-col-12"src="img/Advanced.jpg"/>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quo ipsa quas obcaecati qui vel illum, dolore reprehenderit beatae culpa doloremque dolor? Perferendis rerum corrupti doloribus minus esse. Ut, dolore!</p>
+            </article>
+           </section>
+            <section class="form">
+               <h2 id ="contact"class="title">Contact</h2>
+              <form  action="">
+                <label for="fName">Enter first name please:</label><br>
+                 <input class='input' type='text' id='fName' name="fName"/><br>
+                 <label for="lName">Enter last name please:</label><br>
+                 <input class='input' type="text" id="lName" name="lName"/><br>
+                 <label for="email">Enter Email Please:</label><br>
+                 <input class='input' type="email" id="email" name="email"/><br>
+                 <label for="Message">Enter Message please:</label><br>
+                 <textarea class='textarea' id="message"rows="4" cols="50">
+                    Enter your message
+                  </textarea>
+                  <div class='social-flex'>
+                  <article>surfing@mail.com</article>
+                  <article><img class="face" src="img/facebook.svg"/></article>
+                 <article><img class="twitter" src="img/twitter_circle_color.svg"/></article> 
+                 <article><img class="insta" src="img/instagram.svg"/></article>
+                 <button class="btn" type='button'>Submit</button>
+                  </div>
+                </form>
+                 </section>
+                 </main>
+                  <footer class="footer">
+                  <p>© Copyright Of Alisina</p>
+                </footer>
+                </body>
+                </html>
+      
