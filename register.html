@@ -11,31 +11,42 @@
   <body>
     <header>
         <nav>
-          <ul class="xl-col-12 nav-menu">
-            <li class ='li xl-col-1'><a href="index.html">Home</a></li>
-            </ul>
+           <div id="menu-bar">
+              <div id='ham-menu' onclick ='onClickMenu()'>
+              <div id = 'bar1' class="bar"></div>
+              <div id = 'bar2' class="bar"></div>
+              <div id = 'bar3' class="bar"></div>
+            </div>
+          
+          <div class="nav-menu" id='nav-menu'>
+              <a href="index.html">Home</a>
+              <a href="index.html#about">About</a>
+              <a href="index.html#packages">Packages</a>
+              <a href="index.html#contact">Contact</a>
+              <a href="register.html">Register</a>
+            </div>
           </nav>
         </header>
          <main>
           <section>
             <figure>
-              <img class='xl-col-12'src ='img/welcome.jpg'>
+              <img class='hero-image xl-col-12'src ='img/welcome.jpg'>
             </figure>
             </section>
             <section class="form">
               <h2 class="register">Registration form</h2>
               <form  action="">
-                <label for="fName">Enter first name please:</label><br>
+                <label for="fName">Enter first name:</label><br>
                  <input class='input' type='text' id='fName' name="fName"/><br>
-                 <label for="lName">Enter last name please:</label><br>
+                 <label for="lName">Enter last name:</label><br>
                  <input class='input' type="text" id="lName" name="lName"/><br>
-                 <label for="email">Enter Email Please:</label><br>
+                 <label for="email">Enter Email:</label><br>
                  <input class='input' type="email" id="email" name="email"/><br>
-                 <label for="phone">Enter phone please:</label><br>
+                 <label for="phone">Enter phone:</label><br>
                  <input class='input' type='tel' id="phone" name="phone"/><br>
-                 <label for="birthday">Enter Birthday please:</label><br>
+                 <label for="birthday">Enter Birthday:</label><br>
                  <input class="input" type="date" id='birthday' name="birthday"/><br>
-                 <label for="package">Select a package please:</label><br>
+                 <label for="package">Select a package:</label><br>
                  <select id="package" name="package">
                    <option value="family">Family</option>
                    <option value="private">Private</option>
@@ -50,5 +61,6 @@
              <footer class="footer">
                <p>© Copyright Of Alisina</p>
              </footer>
+             <script src ='script.js'></script>
             </body>
            </html>
