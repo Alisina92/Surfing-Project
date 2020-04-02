@@ -126,14 +126,18 @@ body{
          position: fixed;
           top: 10;
       }
-  
-  .nav-menu{
-      display: block;
+  #menu-bar{
+    display: flex;
+    flex-direction: column;
+  }
+ #nav-menu{
+      display: flex;
         flex-direction: column;
         text-align: center;
          visibility: hidden;
          
         } 
+ 
     
         .bar {
         height: 5px;
