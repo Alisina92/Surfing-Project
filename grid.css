@@ -19,6 +19,7 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  
 
 }
 
@@ -46,7 +47,7 @@
 @media (min-width: 1200px) {
   /* xl */
   .container {
-    max-width: 1140px;
+    max-width: 1500px;
   }
 }
 
@@ -57,8 +58,8 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: 60px;
+  margin-left: 60px;
  
 }
 
@@ -126,8 +127,9 @@
 .xl-col-12 {
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
+  
 }
 
 /* INDIVIDUAL BREAKPOINTS */

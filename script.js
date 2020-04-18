@@ -3,3 +3,6 @@ function onClickMenu(){
     document.getElementById("nav-menu").classList.toggle("change");
     
 }
+function validateForm(){
+  
+}
