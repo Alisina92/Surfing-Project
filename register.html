@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Barbados surfing school</title>
-    <link rel='stylesheet' type="text/css" href="style.css"/>
+    <link rel='stylesheet' type="text/css" href="regisStyle.css"/>
     <link rel='stylesheet' type="text/css" href="grid.css"/>
   </head>
   <body>
@@ -27,14 +27,15 @@
           </nav>
         </header>
          <main>
-          <section>
+          <section class="image-parents">
             <figure>
-              <img class='hero-image xl-col-12 lg-col-12 md-col-12 sm-col-12'src ='img/welcome.jpg'>
+              <img class='hero-image xl-col-12 lg-col-12 md-col-12 sm-col-12'>
             </figure>
             </section>
             <section class="form">
               <h2 class="register">Registration form</h2>
-              <form  action="">
+               <div id ='error'></div>
+              <form id="register"  action="" onsubmit="validateForm()">
                  <label for="fullname">Fullname:</label><br>
                  <input class='input' type='text' id='fName' name="fName"/><br>
                  <label for="email">Email:</label><br>

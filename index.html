@@ -32,7 +32,7 @@
             <div>
               <h1 class="hero-text">Welcome to Barbados surfing school</h1>
               <div>
-                <img class='hero-image xl-col-12 lg-col-12 md-col-12 sm-col-12 'src ='img/surfing.jpg'>
+                <img class='hero-image xl-col-12 lg-col-12 md-col-12 sm-col-12'>
               </div>
               <div>
                 <a class="regis-button" href="register.html">Register</a>
@@ -67,11 +67,14 @@
             
            <section class="form" >
               <h2 id ="contact"class="title">Contact</h2>
-              <form id =register>
+               <div id ='error'></div>
+              <form id =register onsubmit="validateForm()">
                  <label for="fullname">Fullname:</label><br>
                  <input class='input' type='text' id='fName' name="fName"/><br>
                  <label for="email">Email:</label><br>
                  <input class='input' type="email" id="email" name="email"/><br>
+                 <label for="phone">Phone:</label><br>
+                 <input class='input' type='tel' id="phone" name="phone"/><br>
                  <label for="Message">Message: </label><br>
                  <textarea class='textarea' id="message"rows="4" cols="50">Message</textarea>
                   <div class='social-flex'>
