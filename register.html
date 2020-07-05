@@ -5,65 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Barbados surfing school</title>
-    <link rel='stylesheet' type="text/css" href="regisStyle.css"/>
-    <link rel='stylesheet' type="text/css" href="grid.css"/>
+    <link rel="stylesheet" type="text/css" href="regisStyle.css" />
+    <link rel="stylesheet" type="text/css" href="grid.css" />
   </head>
   <body>
     <header>
-        <nav>
-           <div id="menu-bar">
-              <div id='ham-menu' onclick ='onClickMenu()'>
-              <div id = 'bar1' class="bar"></div>
-              <div id = 'bar2' class="bar"></div>
-              <div id = 'bar3' class="bar"></div>
-            </div>
-            <div class="nav-menu" id='nav-menu'>
-              <a href="index.html">Home</a>
-              <a href="index.html#about">About</a>
-              <a href="index.html#packages">Packages</a>
-              <a href="index.html#contact">Contact</a>
-              <a href="register.html">Register</a>
-            </div>
-          </nav>
-        </header>
-         <main>
-          <section class="image-parents">
-            <figure>
-              <img class='hero-image xl-col-12 lg-col-12 md-col-12 sm-col-12'>
-            </figure>
-            </section>
-            <section class="form">
-              <h2 class="register">Registration form</h2>
-               <div id ='error'></div>
-              <form id="register"  onsubmit ='return regValidation()'>
-                 <label for="fullname">Fullname:</label><br>
-                 <input class='input' type='text' id='fName' name="fName"/><br>
-                 <label for="email">Email:</label><br>
-                 <input class='input' type="email" id="email" name="email"/><br>
-                 <label for="phone">Phone:</label><br>
-                 <input class='input' type='tel' id="phone" name="phone"/><br>
-                 <label for="birthday">Birthday:</label><br>
-                 <input onchange=" return changeHandler()" class="input" type="date" id='birthday' name="birthday"required/><br>
-                 <label for="package">Select a package:</label><br>
-                 <select onchange="dropDownChange" id="package" name="package">
-                   <option value="family">Family</option>
-                   <option value="private">Private</option>
-                   <option value="advanced">Advanced</option>
-                 </select>
-                 <div class='social-flex'>
-                  <article>surfing@mail.com</article>
-                  <article><img class="face" src="img/facebook.png"/></article>
-                 <article><img class="twitter" src="img/twitter_circle_color.png"/></article> 
-                 <article><img class="insta" src="img/instagram.png"/></article>
-                  <button class="btn" type='submit'>Submit</button>
-                  </div>
-              </form>
-                </section>
-                  
-              </main>
-             <footer class="footer">
-               <p>© Copyright Of Alisina</p>
-             </footer>
-             <script src ='regScript.js'></script>
-            </body>
-           </html>
+      <nav>
+        <div id="menu-bar">
+          <div id="ham-menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#packages">Packages</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="register.html">Register</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="image-parents">
+        <figure>
+          <img class="hero-image xl-col-12 lg-col-12 md-col-12 sm-col-12" />
+        </figure>
+      </section>
+      <section class="form">
+        <h2 class="register">Registration form</h2>
+        <div id="error"></div>
+        <form id="register" onsubmit="return regValidation()">
+          <label for="fullname">Fullname:</label><br />
+          <input class="input" type="text" id="fName" name="fName" /><br />
+          <label for="email">Email:</label><br />
+          <input class="input" type="email" id="email" name="email" /><br />
+          <label for="phone">Phone:</label><br />
+          <input class="input" type="tel" id="phone" name="phone" /><br />
+          <label for="birthday">Birthday:</label><br />
+          <input
+            onchange=" return changeHandler()"
+            class="input"
+            type="date"
+            id="birthday"
+            name="birthday"
+            required
+          /><br />
+          <label for="package">Select a package:</label><br />
+          <select onchange="dropDownChange" id="package" name="package">
+            <option value="family">Family</option>
+            <option value="private">Private</option>
+            <option value="advanced">Advanced</option>
+          </select>
+          <div class="social-flex">
+            <article>surfing@mail.com</article>
+            <article><img class="face" src="img/facebook.png" /></article>
+            <article>
+              <img class="twitter" src="img/twitter_circle_color.png" />
+            </article>
+            <article><img class="insta" src="img/instagram.png" /></article>
+            <button class="btn" type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>© Copyright Of Alisina</p>
+    </footer>
+    <script src="regScript.js"></script>
+  </body>
+</html>

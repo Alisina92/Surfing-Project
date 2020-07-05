@@ -5,93 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Barbados surfing school</title>
-    <link rel='stylesheet' type="text/css" href="style.css"/>
-    <link rel='stylesheet' type="text/css" href="grid.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="grid.css" />
   </head>
   <body>
     <header>
-         <nav>
-           <div id="menu-bar">
-              <div id='ham-menu' onclick ='onClickMenu()'>
-              <div id = 'bar1' class="bar"></div>
-              <div id = 'bar2' class="bar"></div>
-              <div id = 'bar3' class="bar"></div>
-            </div>
-            <div class="nav-menu" id='nav-menu'>
-              <a href="index.html">Home</a>
-              <a href="#about">About</a>
-              <a href="#packages">Packages</a>
-              <a href="#contact">Contact</a>
-             <a href="register.html">Register</a>
+      <nav>
+        <div id="menu-bar">
+          <div id="ham-menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
           </div>
-          </nav>
-         </header>
-           
-         <main>
-        <section>
-            <div>
-              <h1 class="hero-text">Welcome to Barbados surfing school</h1>
-              <div>
-                <img class='hero-image xl-col-12 lg-col-12 md-col-12 sm-col-12'>
-              </div>
-              <div>
-                <a class="regis-button" href="register.html">Register</a>
-              </div>
-            </div>
-            </section>
-          <section class="container xl-col-12 lg-col-12 md-col-12 sm-col-12">
-            <h2 id ="about"class="title">About</h2>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="#about">About</a>
+          <a href="#packages">Packages</a>
+          <a href="#contact">Contact</a>
+          <a href="register.html">Register</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div>
+          <h1 class="hero-text">Welcome to Barbados surfing school</h1>
+          <div>
+            <img class="hero-image xl-col-12 lg-col-12 md-col-12 sm-col-12" />
+          </div>
+          <div>
+            <a class="regis-button" href="register.html">Register</a>
+          </div>
+        </div>
+      </section>
+      <section class="container xl-col-12 lg-col-12 md-col-12 sm-col-12">
+        <h2 id="about" class="title">About</h2>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum et
+            libero totam necessitatibus distinctio rem deleniti vero ipsam
+            ducimus. Ea, molestiae cumque. Perferendis sequi corporis quasi.
+            Vitae consequuntur nemo doloribus itaque? Vitae quis excepturi, quae
+            maiores ea rem beatae cum? Atque, rerum omnis odio unde corporis
+            quasi vel doloribus tenetur consequuntur excepturi aperiam ullam
+            animi fugit corrupti recusandae molestiae fugiat itaque blanditiis
+            eligendi. Doloribus praesentium consectetur numquam enim mollitia
+            quasi a voluptate porro cum. Velit quibusdam nemo placeat delectus
+            molestias tempore quo aliquam pariatur omnis, consequatur dolores?
+            Nulla aliquid quam expedita? Optio illo velit fugiat, fugit iure
+            nihil? Ab, quas!
+          </p>
+          <h2 id="packages" class="title">Packages</h2>
+        </article>
+      </section>
+
+      <section class="row">
+        <article class="xl-col-4 lg-col-4 md-col-12 sm-col-12 container">
+          <h3 class="title">Family package</h3>
+          <img
+            class="packages-image xl-col-12 lg-col-12 md-col-12 sm-col-12"
+            src="img/family.jpg"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quo
+            ipsa quas obcaecati qui vel illum, dolore reprehenderit beatae culpa
+            doloremque dolor? Perferendis rerum corrupti doloribus minus esse.
+            Ut, dolore!
+          </p>
+        </article>
+        <article class="xl-col-4 lg-col-4 md-col-12 sm-col-12 container">
+          <h3 class="title">One-To-One Package</h3>
+          <img
+            class="packages-image xl-col-12 lg-col-12 md-col-12 sm-col-12"
+            src="img/private.jpg"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quo
+            ipsa quas obcaecati qui vel illum, dolore reprehenderit beatae culpa
+            doloremque dolor? Perferendis rerum corrupti doloribus minus esse.
+            Ut, dolore!
+          </p>
+        </article>
+        <article class="xl-col-4 lg-col-4 md-col-12 sm-col-12 container">
+          <h3 class="title">Advanced Package</h3>
+          <img
+            class="packages-image xl-col-12 lg-col-12 md-col-12 sm-col-12"
+            src="img/Advanced.jpg"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quo
+            ipsa quas obcaecati qui vel illum, dolore reprehenderit beatae culpa
+            doloremque dolor? Perferendis rerum corrupti doloribus minus esse.
+            Ut, dolore!
+          </p>
+        </article>
+      </section>
+
+      <section class="form">
+        <h2 id="contact" class="title">Contact</h2>
+        <div id="error"></div>
+        <form id="contactForm" onsubmit="return validateForm()">
+          <label for="fullname">Fullname:</label><br />
+          <input class="input" type="text" id="fName" name="fName" /><br />
+          <label for="email">Email:</label><br />
+          <input class="input" type="email" id="email" name="email" /><br />
+          <label for="phone">Phone:</label><br />
+          <input class="input" type="tel" id="phone" name="phone" /><br />
+          <label for="Message">Message: </label><br />
+          <textarea class="textarea" id="message" rows="4" cols="50">
+Message</textarea
+          >
+          <div class="social-flex">
+            <article>surfing@mail.com</article>
+            <article><img class="face" src="img/facebook.png" /></article>
             <article>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum et libero totam necessitatibus distinctio rem deleniti vero ipsam ducimus. Ea, molestiae cumque. Perferendis sequi corporis quasi. Vitae consequuntur nemo doloribus itaque? Vitae quis excepturi, quae maiores ea rem beatae cum? Atque, rerum omnis odio unde corporis quasi vel doloribus tenetur consequuntur excepturi aperiam ullam animi fugit corrupti recusandae molestiae fugiat itaque blanditiis eligendi. Doloribus praesentium consectetur numquam enim mollitia quasi a voluptate porro cum. Velit quibusdam nemo placeat delectus molestias tempore quo aliquam pariatur omnis, consequatur dolores? Nulla aliquid quam expedita? Optio illo velit fugiat, fugit iure nihil? Ab, quas!</p>
-              <h2 id ="packages"class="title">Packages</h2>
+              <img class="twitter" src="img/twitter_circle_color.png" />
             </article>
-          </section>
-           
-          <section class="row"> 
-             <article class="xl-col-4 lg-col-4 md-col-12 sm-col-12 container"> 
-              <h3 class="title">Family package</h3>
-              <img class="packages-image xl-col-12 lg-col-12 md-col-12 sm-col-12 "src="img/family.jpg"/>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quo ipsa quas obcaecati qui vel illum, dolore reprehenderit beatae culpa doloremque dolor? Perferendis rerum corrupti doloribus minus esse. Ut, dolore!</p>
-            </article>
-              <article class="xl-col-4 lg-col-4 md-col-12 sm-col-12 container"> 
-              <h3 class="title">One-To-One Package</h3>
-            <img class="packages-image xl-col-12 lg-col-12 md-col-12 sm-col-12 "src="img/private.jpg"/>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quo ipsa quas obcaecati qui vel illum, dolore reprehenderit beatae culpa doloremque dolor? Perferendis rerum corrupti doloribus minus esse. Ut, dolore!</p>
-            </article>
-            <article class="xl-col-4 lg-col-4 md-col-12 sm-col-12 container"> 
-             <h3 class="title">Advanced Package</h3>
-              <img class="packages-image xl-col-12 lg-col-12 md-col-12 sm-col-12 "src="img/Advanced.jpg"/>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quo ipsa quas obcaecati qui vel illum, dolore reprehenderit beatae culpa doloremque dolor? Perferendis rerum corrupti doloribus minus esse. Ut, dolore!</p>
-            </article>
-           </section>
-            
-           <section class="form" >
-              
-            <h2 id ="contact"class="title">Contact</h2>
-               <div id ='error'></div>
-              <form id ='contactForm' onsubmit='return validateForm()'>
-                 <label for="fullname">Fullname:</label><br>
-                 <input class='input' type='text' id='fName' name="fName"/><br>
-                 <label for="email">Email:</label><br>
-                 <input class='input' type="email" id="email" name="email"/><br>
-                 <label for="phone">Phone:</label><br>
-                 <input class='input' type='tel' id="phone" name="phone"/><br>
-                 <label for="Message">Message: </label><br>
-                 <textarea class='textarea' id="message"rows="4" cols="50">Message</textarea>
-                  <div class='social-flex'>
-                  <article>surfing@mail.com</article>
-                  <article><img class="face" src="img/facebook.png"/></article>
-                 <article><img class="twitter" src="img/twitter_circle_color.png"/></article> 
-                 <article><img class="insta" src="img/instagram.png"/></article>
-                 <button class="btn" type='submit'>Submit</button>
-                  </div>
-                </form>
-                 </section>
-                 </main>
-                  <footer class="footer">
-                  <p>© Copyright Of Alisina</p>
-                </footer>
-                <script src ='script.js'></script>
-              </body>
-                </html>
-      
+            <article><img class="insta" src="img/instagram.png" /></article>
+            <button class="btn" type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>© Copyright Of Alisina</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
