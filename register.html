@@ -35,7 +35,7 @@
             <section class="form">
               <h2 class="register">Registration form</h2>
                <div id ='error'></div>
-              <form id="register"  action="" onsubmit="validateForm()">
+              <form id="register"  onsubmit ='return regValidation()'>
                  <label for="fullname">Fullname:</label><br>
                  <input class='input' type='text' id='fName' name="fName"/><br>
                  <label for="email">Email:</label><br>
@@ -43,9 +43,9 @@
                  <label for="phone">Phone:</label><br>
                  <input class='input' type='tel' id="phone" name="phone"/><br>
                  <label for="birthday">Birthday:</label><br>
-                 <input class="input" type="date" id='birthday' name="birthday"/><br>
+                 <input onchange=" return changeHandler()" class="input" type="date" id='birthday' name="birthday"required/><br>
                  <label for="package">Select a package:</label><br>
-                 <select id="package" name="package">
+                 <select onchange="dropDownChange" id="package" name="package">
                    <option value="family">Family</option>
                    <option value="private">Private</option>
                    <option value="advanced">Advanced</option>
@@ -55,14 +55,15 @@
                   <article><img class="face" src="img/facebook.png"/></article>
                  <article><img class="twitter" src="img/twitter_circle_color.png"/></article> 
                  <article><img class="insta" src="img/instagram.png"/></article>
-                  <button class="btn" type='button'>Submit</button>
+                  <button class="btn" type='submit'>Submit</button>
                   </div>
               </form>
                 </section>
-             </main>
+                  
+              </main>
              <footer class="footer">
                <p>© Copyright Of Alisina</p>
              </footer>
-             <script src ='script.js'></script>
+             <script src ='regScript.js'></script>
             </body>
            </html>

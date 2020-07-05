@@ -4,33 +4,59 @@ function onClickMenu(){
     
 }
 function validateForm(){
-    let theForm = document.getElementById('register');
-    let theName = document.getElementById('fName');
-    let theEmail = document.getElementById('email');
-    let theMessage = document.getElementById('message');
-    let theDate = document.getElementById('birthday');
+    //let theDate = document.getElementById('birthday');
+    let theName = document.getElementById('fName').value;
+    let theEmail = document.getElementById('email').value;
+    let thePhone = document.getElementById('phone').value;
+    let theMessage = document.getElementById('message').value;
     let errorElement = document.getElementById('error');
-
-    theForm.addEventListener('submit',(event)=>{
-        let message =[];
-        if(theName.value===''){
-           message.push('The name is required');
-        } 
-        if(theEmail.value===''|| !theEmail.includes('@')){
-            message.push('The email is required'); 
-        }else{
-            message.push('The "@" is required'); 
+    let text;
+    
+    
+    event.preventDefault();
+    if(theName.length<3){
+        errorElement.style.padding = '10px';
+        text= 'The name is required';
+        errorElement.textContent = text
+        return false;
+    } 
+    if (theEmail.indexOf("@")==-1 || theEmail.length<6) {
+        errorElement.style.padding = "10px";
+        text = "The email is required";
+        errorElement.textContent = text;
+        return false;
+    }
+    
+    if(isNaN(thePhone)||thePhone<6){
+        errorElement.style.padding = "10px";
+        text = 'The Phone is required';
+        errorElement.textContent = text;
+        return false;
+    }
+    
+    if(theMessage.length<20){
+        errorElement.style.padding = "10px";
+        text='message is required';
+        errorElement.textContent = text;
+        return false;
+    }
+    
+      
+       if (validateForm){
+          alert("form successfully submitted");
+           true
+          document.getElementById("contactForm").reset();
         }
-        if(theMessage.value ===''){
-            message.push('message is required');
-        } 
-        if(theDate.value ===undefined){
-            message.push('Enter your date of Birth');
-        }
-        if(message.length>0){
-            event.preventDefault();
-            errorElement.innerHTML =message.join(' , ')
-        }
+       
+       
+    
         
-    });
-}
+    }
+    
+    // if(theDate.value ===undefined){
+    //     message.push('Enter your date of Birth');
+    // }
+    // if(message.length>0){
+    //     errorElement.innerHTML =message.join(' , ')
+    //  }
+     

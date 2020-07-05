@@ -66,9 +66,10 @@
            </section>
             
            <section class="form" >
-              <h2 id ="contact"class="title">Contact</h2>
+              
+            <h2 id ="contact"class="title">Contact</h2>
                <div id ='error'></div>
-              <form id =register onsubmit="validateForm()">
+              <form id ='contactForm' onsubmit='return validateForm()'>
                  <label for="fullname">Fullname:</label><br>
                  <input class='input' type='text' id='fName' name="fName"/><br>
                  <label for="email">Email:</label><br>
@@ -82,7 +83,7 @@
                   <article><img class="face" src="img/facebook.png"/></article>
                  <article><img class="twitter" src="img/twitter_circle_color.png"/></article> 
                  <article><img class="insta" src="img/instagram.png"/></article>
-                 <button class="btn" type='button'>Submit</button>
+                 <button class="btn" type='submit'>Submit</button>
                   </div>
                 </form>
                  </section>
